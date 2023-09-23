@@ -15,5 +15,12 @@ namespace Palindromes.Tests
       bool result = Palindrome.IsPalindrome(userInput);
       Assert.IsTrue(result);
     }
+    [TestMethod]
+    public void IsPalindrome_ReturnsTrueIfWordIsIdenticalToWordReverse_Bool()
+    {
+      string userInput = "kay,ak";
+      bool result = Palindrome.IsPalindrome(userInput);
+      Assert.IsTrue(result);
+    }
   }
 }
