@@ -11,7 +11,7 @@ namespace Palindromes.Tests
     [TestMethod]
     public void IsPalindrome_ReturnsTrueIfWordIsIdenticalToWordReversed_Bool()
     {
-      string userInput = "mom";
+      string userInput = "kayak";
       bool result = Palindrome.IsPalindrome(userInput);
       Assert.IsTrue(result);
     }
