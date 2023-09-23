@@ -15,6 +15,5 @@ namespace Palindromes.Tests
       bool result = Palindrome.IsPalindrome(userInput);
       Assert.IsTrue(result);
     }
-
   }
 }
