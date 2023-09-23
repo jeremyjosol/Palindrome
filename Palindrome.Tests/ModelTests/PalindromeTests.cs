@@ -30,12 +30,18 @@ namespace Palindromes.Tests
       Assert.IsTrue(result);
     }
     [TestMethod]
-    public void IsPalindrome_ReturnsTrueIfIntegersAreIdenticalToIntegersReversed_Bool()
+    public void IsNumberPalindrome_ReturnsTrueIfIntegersAreIdenticalToIntegersReversed_Bool()
     {
-      int userInput = 112;
+      int userInput = 111;
       bool result = Palindrome.IsNumberPalindrome(userInput);
       Assert.IsTrue(result);
-
+    }
+    [TestMethod]
+    public void IsNumberPalindrome_ReturnsTrueIfIntegersAreIdenticalToIngersReversedConfirm_Bool()
+    {
+      int userInput = 13331;
+      bool result = Palindrome.IsNumberPalindrome(userInput);
+      Assert.IsTrue(result);
     }
   }
 }
