@@ -16,9 +16,16 @@ namespace Palindromes.Tests
       Assert.IsTrue(result);
     }
     [TestMethod]
-    public void IsPalindrome_ReturnsTrueIfWordIsIdenticalToWordReverse_Bool()
+    public void IsPalindrome_RemovesSpecialCharactersAndReturnsTrueIfWordIsIdenticalToWordReverse_Bool()
     {
       string userInput = "kay,ak";
+      bool result = Palindrome.IsPalindrome(userInput);
+      Assert.IsTrue(result);
+    }
+    [TestMethod]
+    public void IsPalindrome_RemovesSpecialCharactersAndReturnsTrueIfWordIsIdenticalToWordReversedNoFalsePositives_Bool()
+    {
+      string userInput = "Madam in Eden, I'm Adam.";
       bool result = Palindrome.IsPalindrome(userInput);
       Assert.IsTrue(result);
     }
